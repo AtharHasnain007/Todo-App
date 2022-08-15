@@ -38,6 +38,7 @@ No Todos Found. Add Your First Todo Now!
         <th scope="col">Actions</th>
       </tr>
     </thead>
+    
     <tbody>
         {% for todo in allTodo %}
         <tr>
@@ -49,9 +50,9 @@ No Todos Found. Add Your First Todo Now!
           <td><a href="/delete/{{todo.Sno}}"type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</button>
           </td>
         </tr>
-      </tbody>
-    </table>
         {% endfor %}
+      </tbody>
+      </table>
         {% endif %}
 
      
